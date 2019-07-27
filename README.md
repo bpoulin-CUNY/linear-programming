@@ -1,3 +1,9 @@
+# Get the Files from the Commandline
+
+downoad the entire repistory and save it to your documents folder
+
+`git clone https://github.com/bpoulin-CUNY/linear-programming.git`
+
 # Create a Stable Work Environment
 
 Because PulP only runs on Python 2.7, for those of you, like me, who protect our stable Python 3 system virulently will want to isolate the Python 2.7 instance, a conda environment is the perfect way to do this.
@@ -32,11 +38,10 @@ You can do this using:
 
 `source activate pulp-env`
 
-After activating your terminal display will change, showing your current work directory preceded by `(pul-env)` the name of your environment.    
+After activating your terminal display will change, showing your current work directory preceded by `(pulp-env)` the name of your environment.    
 
 
-
-![](/Users/bpoulin/Desktop/pulp-env-2.png).  
+![](images/pulp-env-2.png).  
 
 
 
@@ -48,6 +53,15 @@ If you do not see this you may need to do some problem-solving, but be sure that
 `pip install pulp`
 
 You should see the termininal instaling a bunch of things, when it stops you should be ready to go.
+
+### From the Pulp Directory Call the test file
+ python test.py
+ 
+ If everything works out as it should, you will see something like this:
+
+<img src="images/test.png" width="400">
+
+**If you saw something along the lines of the output above, you are good to go!**. 
 
 ### Open Jupyter Notebook
 
@@ -61,7 +75,7 @@ If, instead you get the output:
 
 `ModuleNotFoundError: No module named 'pulp'`
  
-##  Open Jupyter Test Notebook & Run It
+##  Open Jupyter Test Notebook & Learn Some PulP
 
 It is a good idea to run this test notebook, line by line prior to engaging in an serious linear programming adventures to be sure that you have a proper environment.
 
